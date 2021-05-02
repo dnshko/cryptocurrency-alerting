@@ -2,6 +2,12 @@ import React from 'react'
 import { Col, Container, Row, Form, Button } from 'react-bootstrap'
 
 function AlertForms() {
+
+    const inputStyle = {
+        borderRadius: "30px",
+        border: "2px solid pink",
+        height: "38px"
+    }
     return (
         <div style={{marginTop:"20px"}}>
             <Container>
@@ -11,42 +17,42 @@ function AlertForms() {
                         <Form.Group as={Row}>
                             <Form.Label className="col form-label">Choose Coin</Form.Label>
                             <Col>
-                                <Form.Control type="text"/>                            
+                                <Form.Control type="text" style={inputStyle}/>                            
                             </Col>
                         </Form.Group>
 
                         <Form.Group as={Row}>
                             <Form.Label className="col form-label">Alert Me on</Form.Label>
                             <Col>
-                                <Form.Control type="text"/>                            
+                                <Form.Control type="text" style={inputStyle}/>                            
                             </Col>
                         </Form.Group>
 
                         <Form.Group as={Row}>
                                 <Form.Label className="col form-label">When Price of a Coin</Form.Label>
                             <Col>
-                                <Form.Control type="text"/>                            
+                                <Form.Control type="text" style={inputStyle}/>                            
                             </Col>
                         </Form.Group>
 
                         <Form.Group as={Row}>
                                 <Form.Label className="col form-label">Goes</Form.Label>
                             <Col>
-                                <Form.Control type="text"/>                            
+                                <Form.Control type="text" style={inputStyle}/>                            
                             </Col>
                         </Form.Group>
 
                         <Form.Group as={Row}>
                                 <Form.Label className="col form-label">By</Form.Label>
                             <Col>
-                                <Form.Control type="text"/>                            
+                                <Form.Control type="text" style={inputStyle}/>                            
                             </Col>
                         </Form.Group>
 
                         <Form.Group as={Row}>
                             <Form.Label className="col form-label">COOLDOWN</Form.Label>
                             <Col>
-                                <Form.Control type="text" placeholder="1 Hour"/>                            
+                                <Form.Control type="text" placeholder="1 Hour" style={inputStyle}/>                            
                             </Col>
                         </Form.Group>
 
@@ -55,7 +61,7 @@ function AlertForms() {
                                 <Form.Label className="col form-label">Add Note</Form.Label>
                             </Col>
                             <Col>
-                                <Form.Control type="text"/>                            
+                                <Form.Control type="text" style={inputStyle}/>                            
                             </Col>
                         </Form.Group>
 
