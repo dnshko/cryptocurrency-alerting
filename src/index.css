@@ -5,27 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #F6F6F6;
-
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-#root{
-  background: #F6F6F6;
-}
-.form-label{
-  text-transform: capitalize;
-  font-family: Gill Sans;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: right;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-  font-size: medium;
 }
