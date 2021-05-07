@@ -78,12 +78,12 @@ class Topbar extends Component {
                     <div className="float-right">
     
                         
-                        <form className="app-search d-none d-lg-inline-block">
+                        {/* <form className="app-search d-none d-lg-inline-block">
                             <div className="position-relative">
                                 <input type="text" className="form-control" placeholder="Search..."/>
                                 <span className="fa fa-search"></span>
                             </div>
-                        </form>
+                        </form> */}
 
                         <LanguageMenu class="d-lg-inline-block" />
     
@@ -114,6 +114,7 @@ class Topbar extends Component {
                     </div>
                 </Container>
             </div>
+           
             </React.Fragment>
         );
     }

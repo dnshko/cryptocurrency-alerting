@@ -81,6 +81,14 @@ import PagesBlank from "../pages/Extra Pages/pages-blank";
 import Pages404 from "../pages/Extra Pages/pages-404";
 import Pages500 from "../pages/Extra Pages/pages-500";
 
+//new
+import Price from "../pages/price/index";
+import Percent from "../pages/percent/index";
+import Periodic from "../pages/periodic/index";
+import Marketcap from "../pages/marketcap/index";
+import Dominance from "../pages/dominance/index";
+
+
 const authProtectedRoutes = [
   // DashBoard
   { path: "/dashboard", component: Dashboard },
@@ -153,6 +161,14 @@ const authProtectedRoutes = [
   { path: "/pages-invoice", component: PagesInvoice },
   { path: "/pages-directory", component: PagesDirectory },
   { path: "/pages-blank", component: PagesBlank },
+
+  //new
+  { path: "/price", component: Price },
+  { path: "/percent", component: Percent },
+  { path: "/periodic", component: Periodic },
+  { path: "/marketcap", component: Marketcap },
+  { path: "/dominance", component: Dominance },
+
 
   { path: "/", exact: true, component: () => <Redirect to="/login" /> }
 ];

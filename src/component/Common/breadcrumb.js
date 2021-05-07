@@ -74,20 +74,6 @@ class Breadcrumb extends Component {
                                     </ol>
                             </div>
                         </Col>
-                        <Col sm="6">
-                            <div className="state-information d-none d-sm-block">
-                                <div className={this.props.layoutType === "horizontal" ? "state-graph float-right" : "state-graph"}>
-                                    
-                                <C3Chart data={data1} legend={legend} axis={axis} bar={bar} size={size} padding={padding} />
-                                    
-                                    <div className="info">Balance $ 2,317</div>
-                                </div>
-                                <div className="state-graph">
-                                <C3Chart data={data} legend={legend} axis={axis} bar={bar} size={size} padding={padding} />
-                                    <div className="info">Item Sold 1230</div>
-                                </div>
-                            </div>
-                        </Col>
                     </Row>
             </React.Fragment>
         );

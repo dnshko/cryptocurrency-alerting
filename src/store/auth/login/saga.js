@@ -14,7 +14,7 @@ function* loginUser({ payload: { username, password, history } }) {
             setLoggeedInUser(response);
             yield put(loginUserSuccessful(response));
             // console.log(ans);
-            history.push('/dashboard');
+            history.push('/price');
         } catch (error) {
             yield put(apiLoginError(error));
         }

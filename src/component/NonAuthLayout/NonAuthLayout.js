@@ -16,7 +16,7 @@ class NonAuthLayout extends Component {
         let currentage = this.capitalizeFirstLetter(this.props.location.pathname);
 
         document.title =
-          currentage + " | Lexa - Responsive Bootstrap 4 Admin Dashboard";
+          currentage + " | CA";
     }
     render() {
         return <React.Fragment>

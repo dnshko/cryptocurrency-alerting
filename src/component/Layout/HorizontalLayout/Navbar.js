@@ -111,17 +111,43 @@ class Navbar extends Component {
             <React.Fragment>
             <div className="container-fluid">
                 <div className="topnav">
-                    <nav className="navbar navbar-light navbar-expand-lg topnav-menu" id="navigation">
+                    <nav className="navbar navbar-light navbar-expand-lg topnav-menu" id="navigation" >
 
-                        <Collapse isOpen={this.props.menuOpen} className="navbar-collapse" id="topnav-menu-content">
-                            <ul className="navbar-nav">
+                        <Collapse isOpen={this.props.menuOpen} className="navbar-collapse" id="topnav-menu-content" style={{justifyContent: "space-evenly"}}>
+                            <ul className="navbar-nav" >
+                                {/* <li className="nav-item">
+                                    <Link className="nav-link" to="/dashboard">
+                                        Dashboard
+                                    </Link>
+                                </li> */}
+                                {/*  */}
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="index">
-                                        <i className="ti-dashboard"></i>Dashboard
+                                    <Link className="nav-link" to="/price">
+                                        Price
                                     </Link>
                                 </li>
-
-                                <li className="nav-item dropdown">
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/percent">
+                                        Percent
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/periodic">
+                                        Periodic
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/marketcap">
+                                        Marketcap
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/dominance">
+                                        Dominance
+                                    </Link>
+                                </li>
+                                {/*  */}
+                                {/* <li className="nav-item dropdown">
                                     <Link
                                         onClick={e => { e.preventDefault(); this.setState({ isMail: !this.state.isMail }); }}
                                         className="nav-link dropdown-toggle arrow-none"
@@ -138,9 +164,9 @@ class Navbar extends Component {
                                         <Link to="email-read" className="dropdown-item">Email Read</Link>
                                         <Link to="email-compose" className="dropdown-item">Email Compose</Link>
                                     </div>
-                                </li>
+                                </li> */}
 
-                                <li className="nav-item dropdown">
+                                {/* <li className="nav-item dropdown">
                                     <Link
                                         onClick={e => { e.preventDefault(); this.setState({ isUi: !this.state.isUi }); }}
                                         className="nav-link dropdown-toggle arrow-none"
@@ -150,7 +176,7 @@ class Navbar extends Component {
                                         data-toggle="dropdown"
                                         aria-haspopup="true"
                                     >
-                                        <i className="ti-support"></i>UI Elements 
+                                        UI Elements 
                                     </Link>
 
                                     <div className={this.state.isUi ? "dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-xl show" : "dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-xl"}
@@ -188,9 +214,9 @@ class Navbar extends Component {
                                         </div>
 
                                     </div>
-                                </li>
+                                </li> */}
 
-                                <li className="nav-item dropdown">
+                                 {/* <li className="nav-item dropdown">
                                     <Link
                                         onClick={e => { e.preventDefault(); this.setState({ isForms: !this.state.isForms }); }}
                                         className="nav-link dropdown-toggle arrow-none"
@@ -210,8 +236,8 @@ class Navbar extends Component {
                                             <Link to="form-uploads" className="dropdown-item">Form File Upload</Link>
                                             <Link to="form-xeditable" className="dropdown-item">Form Xeditable</Link>
                                     </div>
-                                </li>
-
+                                </li> */}
+{/*
                                 <li className="nav-item dropdown">
                                     <Link
                                         onClick={e => { e.preventDefault(); this.setState({ isMore: !this.state.isMore }); }}
@@ -332,9 +358,9 @@ class Navbar extends Component {
                                         </div>
 
                                     </div>
-                                </li>
+                                </li> */}
 
-                                <li className="nav-item dropdown">
+                                {/* <li className="nav-item dropdown">
                                 <Link
                                     onClick={e => { e.preventDefault(); this.setState({ isLayouts: !this.state.isLayouts }); }}
                                     className="nav-link dropdown-toggle arrow-none" to="/#" id="topnav-pages" role="button"
@@ -346,7 +372,7 @@ class Navbar extends Component {
                                     <li><Link to="#" className={this.props.layoutWidth === "boxed" ? "dropdown-item active" : "dropdown-item"} onClick = { this.changeLayoutWidth }>{this.props.layoutWidth !== "fluid" ? "Fluid Layout" : "Boxed Layout"}</Link></li>
                                     <li><Link to="#" className="dropdown-item" onClick = { this.changeThemePreloader }>{this.props.isPreloader === true ? "Without Preloader" : "Preloader"}</Link></li>
                                     </div>
-                                </li>
+                                </li> */}
                             </ul>
                         </Collapse>
                     </nav>
