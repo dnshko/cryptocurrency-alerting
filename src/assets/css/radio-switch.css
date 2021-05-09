@@ -1,0 +1,714 @@
+
+ol,
+ul {
+    list-style: none
+}
+
+button,
+input,
+textarea,
+select {
+    margin: 0
+}
+
+.btn,
+.form-control,
+.link,
+.reset {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+select.form-control::-ms-expand {
+    display: none
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+    vertical-align: top
+}
+
+input::-ms-clear {
+    display: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img,
+video,
+svg {
+    max-width: 100%
+}
+
+:root,
+[data-theme="default"] {
+    --color-primary-darker: hsl(220, 90%, 36%);
+    --color-primary-darker-h: 220;
+    --color-primary-darker-s: 90%;
+    --color-primary-darker-l: 36%;
+    --color-primary-dark: hsl(220, 90%, 46%);
+    --color-primary-dark-h: 220;
+    --color-primary-dark-s: 90%;
+    --color-primary-dark-l: 46%;
+    --color-primary: hsl(220, 90%, 56%);
+    --color-primary-h: 220;
+    --color-primary-s: 90%;
+    --color-primary-l: 56%;
+    --color-primary-light: hsl(220, 90%, 66%);
+    --color-primary-light-h: 220;
+    --color-primary-light-s: 90%;
+    --color-primary-light-l: 66%;
+    --color-primary-lighter: hsl(220, 90%, 76%);
+    --color-primary-lighter-h: 220;
+    --color-primary-lighter-s: 90%;
+    --color-primary-lighter-l: 76%;
+    --color-accent-darker: hsl(355, 90%, 41%);
+    --color-accent-darker-h: 355;
+    --color-accent-darker-s: 90%;
+    --color-accent-darker-l: 41%;
+    --color-accent-dark: hsl(355, 90%, 51%);
+    --color-accent-dark-h: 355;
+    --color-accent-dark-s: 90%;
+    --color-accent-dark-l: 51%;
+    --color-accent: hsl(355, 90%, 61%);
+    --color-accent-h: 355;
+    --color-accent-s: 90%;
+    --color-accent-l: 61%;
+    --color-accent-light: hsl(355, 90%, 71%);
+    --color-accent-light-h: 355;
+    --color-accent-light-s: 90%;
+    --color-accent-light-l: 71%;
+    --color-accent-lighter: hsl(355, 90%, 81%);
+    --color-accent-lighter-h: 355;
+    --color-accent-lighter-s: 90%;
+    --color-accent-lighter-l: 81%;
+    --color-black: hsl(240, 8%, 12%);
+    --color-black-h: 240;
+    --color-black-s: 8%;
+    --color-black-l: 12%;
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-h: 0;
+    --color-white-s: 0%;
+    --color-white-l: 100%;
+    --color-success-darker: hsl(94, 48%, 36%);
+    --color-success-darker-h: 94;
+    --color-success-darker-s: 48%;
+    --color-success-darker-l: 36%;
+    --color-success-dark: hsl(94, 48%, 46%);
+    --color-success-dark-h: 94;
+    --color-success-dark-s: 48%;
+    --color-success-dark-l: 46%;
+    --color-success: hsl(94, 48%, 56%);
+    --color-success-h: 94;
+    --color-success-s: 48%;
+    --color-success-l: 56%;
+    --color-success-light: hsl(94, 48%, 66%);
+    --color-success-light-h: 94;
+    --color-success-light-s: 48%;
+    --color-success-light-l: 66%;
+    --color-success-lighter: hsl(94, 48%, 76%);
+    --color-success-lighter-h: 94;
+    --color-success-lighter-s: 48%;
+    --color-success-lighter-l: 76%;
+    --color-error-darker: hsl(355, 90%, 41%);
+    --color-error-darker-h: 355;
+    --color-error-darker-s: 90%;
+    --color-error-darker-l: 41%;
+    --color-error-dark: hsl(355, 90%, 51%);
+    --color-error-dark-h: 355;
+    --color-error-dark-s: 90%;
+    --color-error-dark-l: 51%;
+    --color-error: hsl(355, 90%, 61%);
+    --color-error-h: 355;
+    --color-error-s: 90%;
+    --color-error-l: 61%;
+    --color-error-light: hsl(355, 90%, 71%);
+    --color-error-light-h: 355;
+    --color-error-light-s: 90%;
+    --color-error-light-l: 71%;
+    --color-error-lighter: hsl(355, 90%, 81%);
+    --color-error-lighter-h: 355;
+    --color-error-lighter-s: 90%;
+    --color-error-lighter-l: 81%;
+    --color-warning-darker: hsl(46, 100%, 41%);
+    --color-warning-darker-h: 46;
+    --color-warning-darker-s: 100%;
+    --color-warning-darker-l: 41%;
+    --color-warning-dark: hsl(46, 100%, 51%);
+    --color-warning-dark-h: 46;
+    --color-warning-dark-s: 100%;
+    --color-warning-dark-l: 51%;
+    --color-warning: hsl(46, 100%, 61%);
+    --color-warning-h: 46;
+    --color-warning-s: 100%;
+    --color-warning-l: 61%;
+    --color-warning-light: hsl(46, 100%, 71%);
+    --color-warning-light-h: 46;
+    --color-warning-light-s: 100%;
+    --color-warning-light-l: 71%;
+    --color-warning-lighter: hsl(46, 100%, 81%);
+    --color-warning-lighter-h: 46;
+    --color-warning-lighter-s: 100%;
+    --color-warning-lighter-l: 81%;
+    --color-bg: hsl(0, 0%, 100%);
+    --color-bg-h: 0;
+    --color-bg-s: 0%;
+    --color-bg-l: 100%;
+    --color-contrast-lower: hsl(0, 0%, 95%);
+    --color-contrast-lower-h: 0;
+    --color-contrast-lower-s: 0%;
+    --color-contrast-lower-l: 95%;
+    --color-contrast-low: hsl(240, 1%, 83%);
+    --color-contrast-low-h: 240;
+    --color-contrast-low-s: 1%;
+    --color-contrast-low-l: 83%;
+    --color-contrast-medium: hsl(240, 1%, 48%);
+    --color-contrast-medium-h: 240;
+    --color-contrast-medium-s: 1%;
+    --color-contrast-medium-l: 48%;
+    --color-contrast-high: hsl(240, 4%, 20%);
+    --color-contrast-high-h: 240;
+    --color-contrast-high-s: 4%;
+    --color-contrast-high-l: 20%;
+    --color-contrast-higher: hsl(240, 8%, 12%);
+    --color-contrast-higher-h: 240;
+    --color-contrast-higher-s: 8%;
+    --color-contrast-higher-l: 12%
+}
+
+[data-theme] {
+    background-color: hsl(0, 0%, 100%);
+    background-color: var(--color-bg);
+    color: hsl(240, 4%, 20%);
+    color: var(--color-contrast-high)
+}
+
+:root {
+    --space-unit: 1em;
+    --space-xxxxs: calc(0.125*var(--space-unit));
+    --space-xxxs: calc(0.25*var(--space-unit));
+    --space-xxs: calc(0.375*var(--space-unit));
+    --space-xs: calc(0.5*var(--space-unit));
+    --space-sm: calc(0.75*var(--space-unit));
+    --space-md: calc(1.25*var(--space-unit));
+    --space-lg: calc(2*var(--space-unit));
+    --space-xl: calc(3.25*var(--space-unit));
+    --space-xxl: calc(5.25*var(--space-unit));
+    --space-xxxl: calc(8.5*var(--space-unit));
+    --space-xxxxl: calc(13.75*var(--space-unit));
+    --component-padding: var(--space-md)
+}
+
+
+.radio-list>*,
+.checkbox-list>* {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 0.375em;
+    margin-bottom: var(--space-xxs)
+}
+
+.radio-list>*:last-of-type,
+.checkbox-list>*:last-of-type {
+    margin-bottom: 0
+}
+
+.radio-list label,
+.checkbox-list label {
+    line-height: 1.4;
+    line-height: var(--body-line-height);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.radio-list input,
+.checkbox-list input {
+    vertical-align: top;
+    margin-right: 0.25em;
+    margin-right: var(--space-xxxs);
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.radio-list.radio-list--inline,
+.radio-list.checkbox-list--inline,
+.checkbox-list.radio-list--inline,
+.checkbox-list.checkbox-list--inline {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: -1.25em;
+    margin-bottom: calc(-1*var(--space-md))
+}
+
+.radio-list.radio-list--inline>*,
+.radio-list.checkbox-list--inline>*,
+.checkbox-list.radio-list--inline>*,
+.checkbox-list.checkbox-list--inline>* {
+    margin: 0 1.25em 1.25em 0;
+    margin: 0 var(--space-md) var(--space-md) 0
+}
+
+:root {
+    --zindex-header: 2;
+    --zindex-popover: 4;
+    --zindex-fixed-element: 5;
+    --zindex-overlay: 10
+}
+
+@media not all and (min-width: 30rem) {
+    .display--xs {
+        display: none !important
+    }
+}
+
+@media (min-width: 30rem) {
+    .hide--xs {
+        display: none !important
+    }
+}
+
+@media not all and (min-width: 37.5rem) {
+    .display--sm {
+        display: none !important
+    }
+}
+
+@media (min-width: 37.5rem) {
+    .hide--sm {
+        display: none !important
+    }
+}
+
+@media not all and (min-width: 64rem) {
+    .display--md {
+        display: none !important
+    }
+}
+
+@media (min-width: 64rem) {
+    .hide--md {
+        display: none !important
+    }
+}
+
+@media not all and (min-width: 80rem) {
+    .display--lg {
+        display: none !important
+    }
+}
+
+@media (min-width: 80rem) {
+    .hide--lg {
+        display: none !important
+    }
+}
+
+@media not all and (min-width: 90rem) {
+    .display--xl {
+        display: none !important
+    }
+}
+
+@media (min-width: 90rem) {
+    .hide--xl {
+        display: none !important
+    }
+}
+
+:root {
+    --display: block
+}
+
+.is-visible {
+    display: block !important;
+    display: var(--display) !important
+}
+
+.is-hidden {
+    display: none !important
+}
+
+.sr-only {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    white-space: nowrap
+}
+
+.cd-demo-container {
+    width: calc(100% - 2.5rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.25rem 0;
+    max-width: 64rem
+}
+
+.cd-demo-container--xxxs {
+    max-width: 20rem
+}
+
+.cd-demo-container--xxs {
+    max-width: 30rem
+}
+
+.cd-demo-container--xs {
+    max-width: 37.5rem
+}
+
+.cd-demo-container--sm {
+    max-width: 45rem
+}
+
+.cd-demo-container--lg {
+    max-width: 80rem
+}
+
+.cd-demo-container--full-width {
+    width: 100%;
+    max-width: none
+}
+
+.cd-demo--padding-xl {
+    padding: 2rem 0
+}
+
+.cd-demo-container--center-x {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+@media (min-width: 64rem) {
+    .cd-demo--padding-xl {
+        padding: 3.25rem 0
+    }
+}
+
+.cd-demo-container--is-hidden {
+    display: none
+}
+
+.cd-demo-font {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important
+}
+
+.cd-demo-item--is-hidden {
+    display: none
+}
+
+.cd-demo-item--selected {
+    -webkit-animation: demoItemSelected 0.5s;
+    animation: demoItemSelected 0.5s
+}
+
+@-webkit-keyframes demoItemSelected {
+
+    0%,
+    50% {
+        outline: 2px solid hsl(220, 90%, 56%);
+        outline: 2px solid var(--color-primary)
+    }
+
+    100% {
+        outline: 2px solid transparent
+    }
+}
+
+@keyframes demoItemSelected {
+
+    0%,
+    50% {
+        outline: 2px solid hsl(220, 90%, 56%);
+        outline: 2px solid var(--color-primary)
+    }
+
+    100% {
+        outline: 2px solid transparent
+    }
+}
+
+.cd-demo__title {
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
+    margin-bottom: .75rem;
+    color: hsl(240, 8%, 12%);
+    color: var(--color-contrast-higher)
+}
+
+.cd-demo-divider {
+    height: 1px;
+    background-color: hsl(240, 1%, 83%);
+    background-color: var(--color-contrast-low);
+    margin: 1.25rem 0
+}
+
+.cd-demo-switch {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center
+}
+
+.cd-demo-switch__inner {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.cd-demo-switch__inner button {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 0.875rem;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: .25rem .375rem;
+    border: 1px solid hsl(240, 1%, 83%);
+    border: 1px solid var(--color-contrast-low);
+    color: hsl(240, 8%, 12%);
+    color: var(--color-contrast-higher)
+}
+
+.cd-demo-switch__inner button:focus {
+    outline: 2px solid hsl(240, 8%, 12%);
+    outline: 2px solid var(--color-contrast-higher);
+    outline-offset: 2px;
+    position: relative;
+    z-index: 1
+}
+
+.cd-demo-switch__inner button:first-child {
+    border-right: none;
+    border-radius: 3px 0 0 3px
+}
+
+.cd-demo-switch__inner button:last-child {
+    border-left: none;
+    border-radius: 0 3px 3px 0
+}
+
+.cd-demo-switch__inner button.is-selected {
+    background-color: hsl(240, 8%, 12%);
+    background-color: var(--color-contrast-higher);
+    color: hsl(0, 0%, 100%);
+    color: var(--color-bg);
+    border-color: hsl(240, 8%, 12%);
+    border-color: var(--color-contrast-higher)
+}
+
+.cd-demo__viewport-size {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 99;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: rgba(0, 0, 0, 0.85);
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important
+}
+
+.cd-demo-margin-top,
+.cd-demo-margin-top--md {
+    margin-top: 1.25rem
+}
+
+.cd-demo-margin-top--xxxs {
+    margin-top: .25rem
+}
+
+.cd-demo-margin-top--xxs {
+    margin-top: .375rem
+}
+
+.cd-demo-margin-top--xs {
+    margin-top: .5rem
+}
+
+.cd-demo-margin-top--sm {
+    margin-top: .75rem
+}
+
+.cd-demo-margin-top--lg {
+    margin-top: 2rem
+}
+
+.cd-demo-margin-top--xl {
+    margin-top: 3.25rem
+}
+
+.cd-demo-margin-top--xxl {
+    margin-top: 5.25rem
+}
+
+.cd-demo-margin-top--xxxl {
+    margin-top: 8.5rem
+}
+
+.cd-demo-margin-bottom,
+.cd-demo-margin-bottom--md {
+    margin-bottom: 1.25rem
+}
+
+.cd-demo-margin-bottom--xxxs {
+    margin-bottom: .25rem
+}
+
+.cd-demo-margin-bottom--xxs {
+    margin-bottom: .375rem
+}
+
+.cd-demo-margin-bottom--xs {
+    margin-bottom: .5rem
+}
+
+.cd-demo-margin-bottom--sm {
+    margin-bottom: .75rem
+}
+
+.cd-demo-margin-bottom--lg {
+    margin-bottom: 2rem
+}
+
+.cd-demo-margin-bottom--xl {
+    margin-bottom: 3.25rem
+}
+
+.cd-demo-margin-bottom--xxl {
+    margin-bottom: 5.25rem
+}
+
+.cd-demo-margin-bottom--xxxl {
+    margin-bottom: 8.5rem
+}
+
+:root {
+    --radio-switch-width: 186px;
+    --radio-switch-height: 46px;
+    --radio-switch-padding: 3px;
+    --radio-switch-radius: 50em;
+    --radio-switch-animation-duration: 0.3s
+}
+
+.radio-switch {
+    position: relative;
+    display: inline-block;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 3px;
+    padding: var(--radio-switch-padding);
+    border-radius: 70em;
+    border-radius: calc(var(--radio-switch-radius)*1.4);
+    border: 1px solid hsl(240, 1%, 83%);
+    border: 1px solid var(--color-contrast-low)
+}
+
+.radio-switch:focus-within,
+.radio-switch:active {
+    box-shadow: 0 0 0 3px hsl(0, 0%, 95%);
+    box-shadow: 0 0 0 3px var(--color-contrast-lower)
+}
+
+.radio-switch__item {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    height: calc(var(--radio-switch-height) - 2*var(--radio-switch-padding));
+    width: 90px;
+    width: calc(var(--radio-switch-width)*0.5 - var(--radio-switch-padding))
+}
+
+.radio-switch__label {
+    position: relative;
+    z-index: 2;
+    display: block;
+    border-radius: 50em;
+    border-radius: var(--radio-switch-radius);
+    line-height: 40px;
+    line-height: calc(var(--radio-switch-height) - 2*var(--radio-switch-padding));
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.83333em;
+    font-size: var(--text-sm);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.3s;
+    transition: all var(--radio-switch-animation-duration)
+}
+
+.radio-switch__input:checked~.radio-switch__label {
+    color: hsl(0, 0%, 100%);
+    color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.radio-switch__input:focus~.radio-switch__label {
+    background-color: hsl(220, 90%, 33.6%);
+    background-color: hsl(var(--color-primary-h), var(--color-primary-s), calc(var(--color-primary-l)*0.6))
+}
+
+.radio-switch__label :not(*):focus-within,
+.radio-switch__input:focus~.radio-switch__label {
+    background-color: transparent
+}
+
+.radio-switch__marker {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    border-radius: 50em;
+    border-radius: var(--radio-switch-radius);
+    background-color: hsl(220, 90%, 56%);
+    background-color: var(--color-primary);
+    height: 40px;
+    height: calc(var(--radio-switch-height) - 2*var(--radio-switch-padding));
+    width: 90px;
+    width: calc(var(--radio-switch-width)*0.5 - var(--radio-switch-padding));
+    transition: -webkit-transform 0.3s;
+    transition: -webkit-transform var(--radio-switch-animation-duration);
+    transition: transform 0.3s;
+    transition: transform var(--radio-switch-animation-duration);
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    transition: transform var(--radio-switch-animation-duration), -webkit-transform var(--radio-switch-animation-duration)
+}
+
+.radio-switch__input:checked~.radio-switch__marker {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%)
+}

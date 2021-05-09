@@ -8,7 +8,9 @@ import {
     FormGroup,
     Label,
     Button,
-    Alert
+    Alert,
+    Input,
+    InputGroup
   } from "reactstrap";
 //Import Action to copy breadcrumb items from local state to redux state
 import { setBreadcrumbItems } from "../../store/actions";
@@ -39,116 +41,95 @@ class Price extends Component {
                             <Card>
                                 <CardBody>                                   
                                     <Col lg="12">
-                                        <Alert  className="text-white bg-primary text-center">
+                                        <Alert  className="text-center" color="success">
                                         Get Notified when a coin goes above or below a price target
                                         </Alert>
                                     </Col>
                                     <Col lg="6" className="container">
                             <Card >
                                 <CardBody>
-                                    <AvForm className="custom-validation">
-
-                                    <AvField
-                                        name="Min_Length"
-                                        label="Min Length  "
-                                        placeholder="Min 6 chars"
-                                        type="number"
-                                        errorMessage="Min 6 chars."
-                                        validate={{
-                                            required: { value: true },
-                                            minLength: { value: 6, errorMessage: "Min 6 chars." }
-                                        }}
-                                    />
-                                    <AvField
-                                        name="Max_Length"
-                                        label="Max Length  "
-                                        placeholder="Max 6 chars"
-                                        type="number"
-                                        errorMessage="Max 6 chars."
-                                        validate={{
-                                            required: { value: true },
-                                            maxLength: { value: 6, errorMessage: "Max 6 chars." }
-                                        }}
-                                    />
-                                        <AvField
-                                            name="Range_Value"
-                                            label="Range Length  "
-                                            placeholder="Text between 5 - 10 chars length"
-                                            type="number"
-                                            errorMessage="range between 5 to 10"
-                                            validate={{ required: { value: true } }}
-                                        />
-                                        <AvField
-                                            name="Min_Value1"
-                                            label="Min Value"
-                                            placeholder="Min value is 6"
-                                            min={6}
-                                            type="number"
-                                            errorMessage="This value should be greater than or equal to 6."
-                                            validate={{
-                                                required: { value: true },
-                                                min: { value: 6 }
-                                            }}
-                                        />
-                                        <AvField
-                                            name="Max_Value1"
-                                            label="Max Value"
-                                            placeholder="Max value is 6"
-                                            min={6}
-                                            type="number"
-                                            errorMessage="This value should be less than or equal to 6."
-                                            validate={{
-                                                required: { value: true },
-                                                max: { value: 6 }
-                                            }}
-                                        />
-                                        <AvField
-                                            name="Min_Value"
-                                            label="Range Value"
-                                            placeholder="Number between 6 - 100"
-                                            min={6}
-                                            type="number"
-                                            errorMessage="This value should be between 6 and 100."
-                                            validate={{
-                                                required: { value: true },
-                                                min: { value: 6 },
-                                                max: { value: 100}
-                                            }}
-                                        />
-                                        <AvField
-                                            name="Regular_Exp"
-                                            label="Regular Exp  "
-                                            placeholder="Hex. Color"
-                                            type="number"
-                                            errorMessage="Hex Value"
-                                            validate={{
-                                                required: { value: true },
-                                                pattern: {
-                                                value: "^[#0-9]+$",
-                                                errorMessage: "Only Hex Value"
-                                                }
-                                            }}
-                                            />
-
-                                        <div className="form-group mb-0">
-                                            <div>
-                                                <Button type="submit" color="primary" className="waves-effect waves-light mr-1">
-                                                    Submit
-                                                </Button>
-                                                <Button type="reset" color="secondary" className="waves-effect">
-                                                    Cancel
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    </AvForm>
-
+                                <FormGroup row>
+                                    <Label for="example-text-input" className="col-sm-6 col-form-label">Choose Coin</Label>
+                                    <Col sm="6">
+                                        <Input className="form-control" type="text" defaultValue="" id="example-text-input"/>
+                                    </Col>
+                                </FormGroup>
+                                <FormGroup row>
+                                    <Label for="example-search-input" className="col-sm-6 col-form-label">Alert me on</Label>
+                                    <Col sm="6">
+                                        <Input className="form-control" type="text" defaultValue="" id="example-search-input"/>
+                                    </Col>
+                                </FormGroup>
+                                <FormGroup row>
+                                    <Label for="example-search-input" className="col-sm-6 col-form-label">When price of coin</Label>
+                                    <Col sm="6">
+                                        <Input className="form-control" type="text" defaultValue="" id="example-search-input"/>
+                                    </Col>
+                                </FormGroup>
+                                <FormGroup row>
+                                <Label for="example-search-input" className="col-sm-6 col-form-label">Goes</Label>
+                                <Col sm="6 text-center">
+                                <ul class="radio-switch">
+                                    <li class="radio-switch__item">
+                                        <input class="radio-switch__input sr-only" type="radio" name="radioButton" id="radio1" checked />
+                                        <label class="radio-switch__label" for="radio1">
+                                            <span>
+                                            <svg width="15" height="15" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 24L24 6L43 24H31V42H17V24H5Z" fill="#417505" stroke="#417505" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </span>Above</label>
+                                    </li>
+                                    <li class="radio-switch__item">
+                                        <input class="radio-switch__input sr-only" type="radio" name="radioButton" id="radio2" />
+                                        <label class="radio-switch__label" for="radio2">
+                                            <span>
+                                            <svg width="15" height="15" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 24L24 42L43 24H31V6H17V24H5Z" fill="#d0021b" stroke="#d0021b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </span>Below</label>
+                                        <div aria-hidden="true" class="radio-switch__marker"></div>
+                                    </li>
+                                </ul>
+                                </Col>
+                                </FormGroup>
+                                <FormGroup row>
+                                            <Label className="col-sm-6 col-form-label">Example with postfix (large)</Label>
+                                           <Col sm="6">
+                                           <InputGroup>
+                                                <input
+                                                    type="number"
+                                                    className="form-control"
+                                                    value={""}
+                                                    placeholder="number"
+                                                    
+                                                />
+                                                <div className="input-group-append">
+                                                    <span className="input-group-text col-sm-3">%</span>
+                                                <Input type="select" name="select" id="exampleSelect">
+                                                <option>USD </option>
+                                                <option>INR</option>
+                                                </Input>
+                                                </div>
+                                            </InputGroup>
+                                           </Col>
+                                        </FormGroup>
+                                            <FormGroup row>
+                                                <Label for="example-search-input" className="col-sm-6 col-form-label">COLLDOWN</Label>
+                                                <Col sm="6">
+                                                <Input className="form-control" type="time" defaultValue="13:45:00" id="example-time-input"/>
+                                                </Col>
+                                            </FormGroup>
+                                            <FormGroup row>
+                                                <Label for="example-search-input" className="col-sm-6 col-form-label">Add a note</Label>
+                                                <Col sm="6">
+                                                    <Input className="form-control" type="" defaultValue="" id="example-search-input"/>
+                                                </Col>
+                                            </FormGroup>
+                                            <Col  className="text-center">
+                                        <Button type="button" color="primary" className="waves-effect waves-light">Set Alert</Button>
+                                            </Col>
+                                            </CardBody>
+                                        </Card>
+                                    </Col>
                                 </CardBody>
                             </Card>
                         </Col>
-                                </CardBody>
-                            </Card>
-                        </Col>
-
                     </Row>
                               
             </React.Fragment>

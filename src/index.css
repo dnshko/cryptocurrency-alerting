@@ -1,3 +1,13 @@
+:root {
+  --radio-switch-width: 186px;
+  --radio-switch-height: 46px;
+  --radio-switch-padding: 3px;
+  --radio-switch-radius: 50em;
+  --radio-switch-animation-duration: 0.3s;
+}
+
+@import url("./assets/css/radio-switch.css");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
