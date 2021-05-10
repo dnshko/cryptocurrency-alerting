@@ -63,7 +63,7 @@ class Price extends Component {
                     by_currency
             } = this.state
 
-            axios.post(`http://127.0.0.1:8000/api/price/`, {
+            axios.post(`http://127.0.0.1:8000/api/price/`, { 
                     Choose_Coin,
                     Alert_me_on,
                     When_price_of_coin,
@@ -72,19 +72,17 @@ class Price extends Component {
                     COLLDOWN,
                     Add_a_note,
                     by_currency
-             })                   
-            .then(function (response) {
-                  //access the results here....           
-                   Swal.fire({
+             })
+            .then(function (response)  {
+                    Swal.fire({
                     icon:"success",
                     text:"Client Added", 
-                    title:"success"})// alert
-                
-              })
-              .catch(function (error) {
+                    title:"success"})
+            }) 
+            .catch(function (error)  {
                 console.log(error);
-              });           
-            }
+            })         
+        }
           
          
 
