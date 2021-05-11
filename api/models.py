@@ -12,18 +12,21 @@ from django.core.mail import send_mail
 
 class Price(models.Model):
 
-    Choose_Coin =  models.CharField(max_length=265, null=True, blank=True)
-    Alert_me_on =  models.CharField(max_length=265, null=True, blank=True)
-    When_price_of_coin =  models.CharField(max_length=265, null=True, blank=True)
-    Goes =  models.CharField(max_length=265, null=True, blank=True)
+    choose_coin =  models.CharField(max_length=265, null=True, blank=True)
+    alert_me_on =  models.CharField(max_length=265, null=True, blank=True)
+    when_price_of_coin =  models.CharField(max_length=265, null=True, blank=True)
+    goes =  models.CharField(max_length=265, null=True, blank=True)
     by = models.IntegerField(null=True, blank=True)
-    COLLDOWN = models.DateTimeField(default=timezone.now, null=True, blank=True)
-    Add_a_note = models.CharField(max_length=265, null=True, blank=True)
+    colldown = models.DateTimeField(default=timezone.now, null=True, blank=True)
+    add_a_note = models.CharField(max_length=265, null=True, blank=True)
     by_currency = models.CharField(max_length=265, null=True, blank=True)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table="Price"
 
     def __str__(self):
-        return self.Choose_Coin
+        return self.choose_coin
 
